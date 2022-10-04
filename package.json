@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "name": "tetris-keyboard",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpsuperplane/tetris-keyboard.git"
+  },
+  "author": "Kevin Cong Pei <hello@kevinpei.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kpsuperplane/tetris-keyboard/issues"
+  },
+  "homepage": "https://github.com/kpsuperplane/tetris-keyboard#readme",
+  "description": ""
+}
