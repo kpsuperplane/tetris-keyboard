@@ -1,3 +1,5 @@
+$light: #ddd;
+
 body {
   padding: 0;
   margin: 0;
@@ -9,43 +11,50 @@ body {
 }
 
 #tetris {
-  width: 400px;
-  height: 800px;
+  width: 300px;
+  height: 600px;
   flex: 0;
 }
 
 #input-area {
   display: flex;
-  border: 2px solid #eee;
+  border: 2px solid $light;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 #keyboard {
-  border-right: 2px solid #eee;
+  border-right: 2px solid $light;
   display: flex;
   flex-direction: column;
+  width: 212px;
 }
 
-#cleared {
-  text-align: center;
+hr {
+  border-style: none;
+  height: 1px;
+  background: #ccc;
+}
+
+#instructions {
+  text-align: left;
+  font-size: 12px;
   padding: 8px;
-  font-weight: bold;
-  border-bottom: 1px solid #eee;
+  flex: 0;
 }
 
 #letters {
-  padding: 2px;
+  padding: 4px;
   flex: 1;
   > span {
     display: inline-block;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 8px;
-    border: 2px solid #eee;
-    width: 2em;
+    border: 2px solid $light;
+    width: 30px;
     box-sizing: border-box;
-    height: 2em;
+    height: 30px;
     margin: 2px;
     text-align: center;
     line-height: 1em;
@@ -53,22 +62,26 @@ body {
     position: relative;
     &.letter-selected {
       font-weight: bold;
-      background: #eee;
+      background: $light;
     }
     > span {
       position: absolute;
-      top: 2px;
-      right: 2px;
-      font-size: 10px;
+      top: 1px;
+      right: 1px;
+      font-size: 8px;
       line-height: 10px;
       color: #aaa;
+    }
+    &[data-letter="Submit"],
+    &[data-letter="Clear"] {
+      width: 64px;
     }
   }
 }
 
 #output-area {
   font-size: 40px;
-  border: 2px solid #eee;
+  border: 2px solid $light;
   padding: 4px 12px;
   border-bottom-style: none;
   border-top-left-radius: 5px;
@@ -79,10 +92,10 @@ body {
 }
 
 #up-next {
-  border: 2px solid #eee;
+  border: 2px solid $light;
   border-radius: 5px;
-  padding: 8px;
-  margin: 4px;
+  margin: 6px;
+  margin-top: 0;
   color: #aaa;
   font-size: 14px;
   display: flex;
@@ -91,11 +104,12 @@ body {
   position: relative;
   #up-next-title {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 4px;
+    left: 4px;
+    font-size: 12px;
   }
   #preview {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 }

@@ -61,4 +61,6 @@ export default [
   "7",
   "8",
   "9",
+  "Clear",
+  "Submit",
 ];
