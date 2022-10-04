@@ -6,12 +6,23 @@
     <link rel="stylesheet" href="style.scss" />
   </head>
   <body>
-    <div id="input-area">
-      <div id="keyboard">
-        <div id="cleared">Lines cleared: <span id="cleared-count">0</span></div>
-        <div id="letters"></div>
+    <div id="wrapper">
+      <div id="output-area">
+        <span id="actual-output"></span><span id="output-placeholder"></span>
       </div>
-      <canvas id="tetris" />
+      <div id="input-area">
+        <div id="keyboard">
+          <div id="cleared">
+            Lines cleared: <span id="cleared-count">0</span>
+          </div>
+          <div id="letters"></div>
+          <div id="up-next">
+            <div id="up-next-title">Up Next</div>
+            <canvas id="preview" />
+          </div>
+        </div>
+        <canvas id="tetris" />
+      </div>
     </div>
     <script type="module" src="app.ts"></script>
   </body>

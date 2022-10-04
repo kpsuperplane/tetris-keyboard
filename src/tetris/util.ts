@@ -28,7 +28,7 @@ export const TetrominoShape: {
   [key in Tetromino]: TetrominoShapeDef;
 } = {
   [Tetromino.I]: {
-    fill: "cyan",
+    fill: "#11abb2",
     rotations: [
       [
         [0, 0, 0, 0],
@@ -57,7 +57,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.J]: {
-    fill: "blue",
+    fill: "#1167b2",
     rotations: [
       [
         [1, 0, 0, 0],
@@ -86,7 +86,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.L]: {
-    fill: "orange",
+    fill: "#d17520",
     rotations: [
       [
         [0, 0, 1, 0],
@@ -115,7 +115,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.O]: {
-    fill: "yellow",
+    fill: "#dadb27",
     rotations: [
       [
         [0, 1, 1, 0],
@@ -144,7 +144,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.S]: {
-    fill: "green",
+    fill: "#22c041",
     rotations: [
       [
         [0, 1, 1, 0],
@@ -173,7 +173,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.T]: {
-    fill: "purple",
+    fill: "#ba22c0",
     rotations: [
       [
         [0, 1, 0, 0],
@@ -202,7 +202,7 @@ export const TetrominoShape: {
     ],
   },
   [Tetromino.Z]: {
-    fill: "red",
+    fill: "#dd2525",
     rotations: [
       [
         [1, 1, 0, 0],

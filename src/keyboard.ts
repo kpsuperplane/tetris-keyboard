@@ -24,17 +24,22 @@ function updateCleared(count: number) {
   document
     .querySelector(".letter-selected")
     ?.classList?.remove("letter-selected");
-  console.log("#letter-" + count);
   document.querySelector("#letter-" + count)?.classList?.add("letter-selected");
+  document.querySelector("#output-placeholder")!.innerHTML = LETTERS[count];
 }
 
-export default function init() {
+export default function init(submitLetter: (letter: string) => void) {
   let cleared = 0;
   createKeyboard();
   updateCleared(cleared);
   const onLinesCleared = (count: number) => {
+    // special case: submit
+    if (count === 0) {
+      submitLetter(LETTERS[cleared]);
+      cleared = 0;
+      updateCleared(cleared);
+    }
     cleared += count;
-    console.log(count, cleared);
     updateCleared(cleared);
   };
   return onLinesCleared;
