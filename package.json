@@ -6,7 +6,8 @@
   "name": "tetris-keyboard",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
